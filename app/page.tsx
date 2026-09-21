@@ -2,6 +2,8 @@ import Image from "next/image";
 import Parallax from "./components/Parallax";
 import LuckyDraw from "./components/LuckyDraw";
 import WelcomeGate from "./components/WelcomeGate";
+import HelloCounter from "./components/HelloCounter";
+import PrimeChecker from "./components/PrimeChecker";
 
 type Fruit = {
   image: string;
@@ -153,6 +155,7 @@ export default function Home() {
                 查看四季時令
               </a>
               <LuckyDraw />
+              <HelloCounter />
             </div>
 
             <dl className="mt-14 flex flex-wrap gap-x-10 gap-y-4 border-t border-cream/10 pt-8 font-mono text-xs uppercase tracking-widest text-cream/50">
@@ -166,6 +169,10 @@ export default function Home() {
                 <dt className="inline text-cream">12</dt> 月月鮮果
               </div>
             </dl>
+
+            <div className="mt-10">
+              <PrimeChecker />
+            </div>
           </div>
 
           <div className="lg:col-span-5">
